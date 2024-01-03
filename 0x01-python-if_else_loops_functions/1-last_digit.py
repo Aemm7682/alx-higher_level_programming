@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import random
-import math
 number = random.randint(-10000, 10000)
 if number > 10:
     last = number % 10
