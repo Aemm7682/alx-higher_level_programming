@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 def max_integer(my_list=[]):
-    max_v = 0
-    if len(my_list) == 0:
+    if len(my_list) < 1:
         return None
-    for i in range(len(my_list)):
-        if my_list[i] > max_v:
-            max_v = my_list[i]
-    return max_v
+    new_list = my_list.copy()
+    new_list.sort()
+    return new_list[-1]
