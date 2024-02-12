@@ -43,3 +43,10 @@ test empty with space
 
 	>>> say_my_name(" ", " ")
 	My name is    
+
+no args test
+
+	>>> say_my_name()
+	Traceback (most recent call last):
+        ...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'	
