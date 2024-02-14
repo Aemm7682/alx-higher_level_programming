@@ -4,6 +4,8 @@ JSON representation of an object (string):'''
 
 
 import json
+
+
 def to_json_string(my_obj):
     '''function to serialize the object by using
     JSON
