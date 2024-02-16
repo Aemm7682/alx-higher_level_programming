@@ -21,5 +21,5 @@ class Student:
                 return self.__dict__
             if attr in self.__dict__:
                 new_dict[attr] = self.__dict__[attr]
-            sorted_dict = {key: new_dict[key] for key in sorted(new_dict)}
+        sorted_dict = {key: new_dict[key] for key in sorted(new_dict)}
         return sorted_dict
