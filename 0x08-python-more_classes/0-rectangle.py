@@ -5,4 +5,5 @@ empty class Rectangle that defines a rectangle
 
 
 class Rectangle:
+    """calss clearification"""
     pass
