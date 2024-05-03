@@ -80,4 +80,4 @@ class Rectangle:
         """to return a recatange that width equal to height i.e square
         args:
         size (int): size of width and height"""
-    return cls(size, size)
+        	return cls(size, size)
