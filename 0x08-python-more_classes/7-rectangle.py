@@ -52,7 +52,7 @@ class Rectangle:
         for i in range(self.__height):
             printable += (str(self.print_symbol) * self.__width)
             if i != (self.__height - 1):
-                printable += '\:n'
+                printable += '\n'
                 """ to return the printable again"""
         return printable
 
