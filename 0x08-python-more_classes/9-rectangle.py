@@ -79,5 +79,5 @@ class Rectangle:
     def square(cls, size=0):
         """to return a recatange that width equal to height i.e square
         args:
-        	size (int): size of width and height"""
-        return cls(size, size)
+        size (int): size of width and height"""
+    return cls(size, size)
