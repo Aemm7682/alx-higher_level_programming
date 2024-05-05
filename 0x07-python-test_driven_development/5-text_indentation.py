@@ -18,7 +18,6 @@ def text_indentation(text):
     print(text)
 
 
-# if __name__ == "__main__":
-#     import doctest
-#     doctest.testfile("test/5-text_indentation.txt")
-text_indentation("Holberton School")
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("test/5-text_indentation.txt")
