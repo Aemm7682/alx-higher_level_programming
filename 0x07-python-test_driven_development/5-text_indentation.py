@@ -14,10 +14,11 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     sando = ['?', ':', '.']
     for delim in sando:
-        text = text.replace(delim, delim + "\n\n")
-    print("\n".join(line.strip() for line in text.split('\n')))
+        text = text.replace(delim, delim + "\n\n").join(line.strip() for line in text.split('\n'))
+    print(text)
 
 
-if __name__ == "__main__":
-    import doctest
-    doctest.testfile("test/5-text_indentation.txt")
+# if __name__ == "__main__":
+#     import doctest
+#     doctest.testfile("test/5-text_indentation.txt")
+text_indentation("Holberton School")
