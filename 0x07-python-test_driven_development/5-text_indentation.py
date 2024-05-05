@@ -15,7 +15,7 @@ def text_indentation(text):
     sando = ['?', ':', '.']
     for delim in sando:
         text = text.replace(delim, delim + "\n\n").join(line.strip() for line in text.split('\n'))
-    print(text)
+    print(text, end="")
 
 
 if __name__ == "__main__":
