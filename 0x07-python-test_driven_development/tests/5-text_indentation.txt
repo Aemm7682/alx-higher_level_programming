@@ -1,0 +1,21 @@
+The ``5-text_indentation`` module
+============================
+
+Using ``text_indentation``
+---------------------
+
+Import module:
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+test number
+	>>>text_indentation(1)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+test string without symbol
+	>>>text_indentation("how are you")
+	how are you
+
+test text with delim
+	>>>text_indentation("how are you?")
