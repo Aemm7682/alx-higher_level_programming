@@ -31,3 +31,7 @@ test big text
 	<BLANKLINE>
 	consectetur adipiscing elit.
 	<BLANKLINE>
+
+test white space
+	>>> text_indentation(" ")
+	   
