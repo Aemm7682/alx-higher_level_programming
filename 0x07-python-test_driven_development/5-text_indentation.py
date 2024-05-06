@@ -14,7 +14,8 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     sando = ['?', ':', '.']
     for delim in sando:
-        text = (delim + "\n\n").join(index.strip(" ") for index in text.split(delim))
+        text = (delim + "\n\n").
+        join(index.strip(" ") for index in text.split(delim))
     print(text, end="")
 
 
