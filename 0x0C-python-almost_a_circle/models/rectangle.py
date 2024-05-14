@@ -52,7 +52,7 @@ class Rectangle(Base):
 
     def valid_int(self, name, value, eq=True):
         """method to vaildate the value is integar"""
-        if is not isinstance(value, int):
+        if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(name))
         if eq and value < 0:
             raise ValueError("{} must be >= 0".format(name))
