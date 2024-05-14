@@ -62,3 +62,8 @@ class Rectangle(Base):
     def area(self):
         """ method to find the area of rectangle"""
         return self.height * self.width
+
+    def display(self):
+        """to display Rectangle with hash #"""
+        disp = ('#' * self.width + '\n') *self.height
+        print(disp, end="")
