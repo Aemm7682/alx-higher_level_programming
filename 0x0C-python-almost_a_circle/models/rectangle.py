@@ -67,3 +67,8 @@ class Rectangle(Base):
         """to display Rectangle with hash #"""
         disp = ('#' * self.width + '\n') * self.height
         print(disp, end="")
+
+    def __str__(self):
+        """print rectangle information in string format"""
+        return "[{}] ({}) {}/{} - {}/{}".format(
+                type(self).__name__, self.id, self.x, self.y, self.width, self.height)
