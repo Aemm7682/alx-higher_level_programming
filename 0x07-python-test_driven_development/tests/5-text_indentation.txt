@@ -1,3 +1,4 @@
+The ``5-text_indentation`` module
 ============================
 
 Using ``text_indentation``
@@ -7,31 +8,39 @@ Import module:
     >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 test number
-        >>> text_indentation(1)
-        Traceback (most recent call last):
-        ...
-        TypeError: text must be a string
+	>>>text_indentation(1)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
 
 test string without symbol
-        >>> text_indentation("how are you")
-        how are you
+	>>>text_indentation("how are you")
+	how are you
 
 test text with delim
-        >>> text_indentation("how are you?")
-        how are you?
-        <BLANKLINE>
-
-test mix string and number
-        >>> text_indentation("12hff433")
-	12hff433
-
-test big text
-	>>> text_indentation("Lorem ipsum dolor sit amet,? consectetur adipiscing elit.")
-	Lorem ipsum dolor sit amet,?
-	<BLANKLINE>
-	consectetur adipiscing elit.
+	>>>text_indentation("how are you?")
+	how are you?
 	<BLANKLINE>
 
-test white space
-	>>> text_indentation(" ")
+test statment
+	>>>text_indentation("hello :       how are you  ?               i'm fine   .          ")
+	hello :
+	<BLANKLINE>
+	how are you  ?
+	<BLANKLINE>
+	i'm fine   .
+	<BLANKLINE>
+
+test only delim
+	>>>text_indentation("?:.")
+	?
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+
+test three space
+	>>>text_indentation("   ")
 	   
+
