@@ -74,3 +74,21 @@ class Rectangle(Base):
         return "[{}] ({}) {}/{} - {}/{}".format(
                 type(self).__name__, self.id, self.x, self.y,
                 self.width, self.height)
+
+    def update_fun(self, id=None, width=None, height=None, x=None, y=None):
+        """ internal method to help update functiom"""
+        if id is not None:
+            self.id = id
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
+        if x is not None:
+            self.x = x
+        if y is not None:
+            self.y = y
+
+    def update(self, *args):
+        """to update value by using *arg"""
+        if args:
+            self.update_fun(*args)
