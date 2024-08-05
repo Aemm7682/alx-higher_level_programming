@@ -4,7 +4,7 @@ with a specific value in a dictionary."""
 
 
 def complex_delete(a_dictionary, value):
-    del_dict =[]
+    del_dict = []
     for key in a_dictionary:
         if a_dictionary[key] == value:
             del_dict.append(key)
